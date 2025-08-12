@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Угадай букву</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="animated-gradient-background">
+      <h1 class="post">Угадай букву в таблице зрения</h1>
+
+       <div class="controls">
+         <label class="letterControls">Сложность:
+             <select id="difficulty">
+                 <option value="25">Лёгкий (25 сек) 😛</option>
+                 <option value="15">Средний (15 сек) 😐</option>
+                 <option value="7">Сложный (7 сек) 😈</option>
+             </select>
+        </label>
+        <button id="start-button">Начать игру</button>
+       </div>
+
+      <div id="table-container"></div>
+       <h3 class="postEnter">Для проверки нажмите на ENTER</h3>
+      <div class="controls">
+        <label class="letterLebel">Буква: <input type="text" id="letter-input" maxlength="1" autocomplete="off" autofocus /></label>
+      </div>
+
+      <p id="score" class="score-display">Очки: 0</p>
+
+      <p id="result"></p>
+      <p id="timer"></p>
+    </div>
+ 
+
+  <script src="script.js"></script>
+</body>
+</html>
